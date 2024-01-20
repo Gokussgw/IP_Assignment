@@ -1,0 +1,53 @@
+package my.utm.ip.spring_jdbc.entity;
+
+public class Course {
+    private int id;
+    private String name;
+    private String description;
+
+    // Default constructor
+    public Course() {
+    }
+
+    // Constructor with parameters
+    public Course(int id, String name, String description) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+    }
+
+    // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    // toString method for debugging
+    @Override
+    public String toString() {
+        return "Course{" +
+               "id=" + id +
+               ", name='" + name + '\'' +
+               ", description='" + description + '\'' +
+               '}';
+    }
+}
